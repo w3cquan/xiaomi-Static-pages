@@ -1,0 +1,963 @@
+/* 字体表情 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts2/iconfont.ttf?t=1620377555770') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 页面顶端 */
+
+#pagetopback {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+.pagetop {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 左边字体颜色 */
+
+#pagetopback .topleft li a,
+#pagetopback .topright li a {
+    color: #b0b0b0;
+}
+
+
+/* 右边字体颜色 */
+
+
+/* 排列 */
+
+#pagetopback .topleft {
+    display: flex;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+
+/* 排列 */
+
+#pagetopback .topright {
+    display: flex;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+#pagetopback .topleft span,
+.topright span {
+    color: #424242;
+    margin: 0 0.3em;
+}
+
+#pagetopback .topleft li a:hover,
+#pagetopback .topright li a:hover {
+    color: #fff;
+}
+
+
+/* 购物车样式 */
+
+#pagetopback .shoppingcar {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    margin-left: 15px;
+    color: #b0b0b0;
+}
+
+#pagetopback .shoppingcar .car {
+    color: #b0b0b0;
+    position: relative;
+    top: 2px;
+    margin: 0 2px 0 15px;
+}
+
+#pagetopback .shoppingcar:hover {
+    background-color: #fff;
+}
+
+#pagetopback .shoppingcar:hover .car,
+#pagetopback .shoppingcar:hover i {
+    color: #f50;
+}
+
+
+/* 导航栏和搜索框 */
+
+.page-nav {
+    background-color: #fff;
+}
+
+#pagenav {
+    height: 100px;
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagenav .milogo a {
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+
+#pagenav .milogo img {
+    width: 56px;
+    height: 56px;
+}
+
+#pagenav .nav ul {
+    display: flex;
+}
+
+#pagenav .nav ul li a {
+    display: block;
+    height: 88px;
+    text-align: center;
+    line-height: 84px;
+    margin: 0 10px;
+}
+
+#pagenav .nav ul li a:hover {
+    color: #ff6700;
+    transition: 0.2s;
+}
+
+#pagenav .search {
+    display: flex;
+}
+
+#pagenav .search input {
+    width: 245px;
+    height: 50px;
+    outline-style: none;
+    border: 1px solid #e0e0e0;
+}
+
+#pagenav .search button {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+}
+
+#pagenav .search button:hover {
+    background-color: #ff6700;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#pagenav .search:hover input,
+#pagenav .search:hover button {
+    border-color: #b0b0b0;
+    transition: 0.2s;
+}
+
+
+/* 主页 */
+
+.page-main {
+    background-color: #fff;
+}
+
+#pagemain .mainimg {
+    height: 450px;
+    position: relative;
+}
+
+#pagemain .mainimg img {
+    width: 1226px;
+    height: 460px;
+    position: absolute;
+}
+
+#pagemain .mainimg .li {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+
+#pagemain .mainimg .li li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, .4);
+    float: left;
+    border-radius: 50%;
+    margin-right: 7px;
+    border: 2px solid;
+    border-color: hsla(0, 0%, 100%, .3);
+    cursor: pointer;
+}
+
+#pagemain .mainimg .li li:hover {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, .4);
+}
+
+#pagemain .leftnav {
+    width: 234px;
+    height: 460px;
+    background-color: rgba(105, 101, 101, .6);
+    position: absolute;
+}
+
+#pagemain .leftnav li,
+#pagemain .leftnav li a {
+    width: 234px;
+    height: 42px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+}
+
+#pagemain .leftnav ul {
+    margin-top: 20px;
+}
+
+#pagemain .leftnav li:hover {
+    background-color: #ff6700;
+}
+
+#pagemain .leftnav a {
+    margin-left: 25px;
+}
+
+#pagemain .leftnav a span {
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+}
+
+#pagemain .arrow .left {
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    left: 234px;
+    font-size: 28px;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+}
+
+#pagemain .arrow .left:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#pagemain .arrow .right {
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 28px;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+}
+
+#pagemain .arrow .right:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#pagemain .mainbottom {
+    height: 170px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+#pagemain .mainbottom .caidan {
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pagemain .mainbottom .caidan a {
+    display: block;
+    width: 76px;
+    height: 82px;
+    color: #ccc;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#pagemain .mainbottom .caidan a i {
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+#pagemain .mainbottom .caidan a:hover {
+    color: #fff;
+}
+
+.topimg a,
+.topimg img {
+    width: 316px;
+    height: 170px;
+}
+
+
+/* 小米秒杀 */
+
+.page-sike {
+    background-color: #f5f5f5;
+}
+
+#pagesike .sikespan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+#pagesike .sikespan h2 {
+    font-weight: 300;
+    font-size: 22px;
+    color: #333;
+}
+
+#pagesike .sikespan .sikebut {
+    display: flex;
+}
+
+#pagesike .sikespan .sikebut button {
+    width: 36px;
+    height: 24px;
+    color: #b0b0b0;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#pagesike .sikespan .sikebut button:hover {
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+#pagesike .sikespan .sikebut button.sikebutlast {
+    border-left: none;
+}
+
+.sike-time img {
+    width: 35px;
+    height: 54px;
+    margin: 25px 0;
+}
+
+.sike {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sike-time {
+    width: 234px;
+    height: 340px;
+    background-color: #f1eded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid red;
+}
+
+.sike-time .time {
+    font-size: 21px;
+    color: red;
+}
+
+.sike-time .time-end {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.sike-time .countdown {
+    display: flex;
+    align-items: center;
+}
+
+.sike-time .countdown span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #605751;
+}
+
+.sike-time .countdown i {
+    font-size: 28px;
+    color: #605751;
+}
+
+
+/* 秒杀图片 */
+
+.sike a {
+    display: flex;
+    width: 234px;
+    height: 340px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sike a img {
+    width: 160px;
+    height: 160px;
+}
+
+.sike a.sike-link-one {
+    border-top: 1px solid #ffac13;
+}
+
+.sike a.sike-link-two {
+    border-top: 1px solid #83c441;
+}
+
+.sike a.sike-link-three {
+    border-top: 1px solid #00c0a5;
+}
+
+.sike a.sike-link-four {
+    border-top: 1px solid #83c441;
+}
+
+.sike a h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sike a .sikeict {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.sike a span {
+    font-size: 12px;
+    color: #ff6700;
+}
+
+.sike a del {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.page-sike .sikeimg img {
+    width: 1226px;
+    height: 120px;
+    margin-top: 14px;
+}
+
+
+/* 手机展示台 */
+
+#mi-phone {
+    background-color: #f5f5f5;
+}
+
+#miphone .miphonetop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+#miphone .miphonetop h2 {
+    font-weight: 300;
+    font-size: 24px;
+    color: #333;
+}
+
+#miphone .miphonetop .miphonetopright a {
+    font-size: 16px;
+}
+
+#miphone .miphonetop .miphonetopright i {
+    font-size: 20px;
+}
+
+#miphone .miphonetop .miphonetopright:hover a,
+#miphone .miphonetop .miphonetopright:hover i {
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+#miphone .phoneleft img {
+    width: 234px;
+    height: 614px;
+    margin-right: 14px;
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+}
+
+#miphone .phoneleft img:hover {
+    box-shadow: 0px 1px 30px #b0b0b0;
+    top: -1px;
+    transition: 0.3s;
+}
+
+.phonelink {
+    display: flex;
+}
+
+#miphone .phoneleft img #miphone .phonelink {
+    display: flex;
+    justify-content: space-between;
+}
+
+#miphone .phonelink .phoneright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#miphone .phonelink .phoneright a {
+    width: 234px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 14px;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+}
+
+#miphone .phonelink .phoneright a:hover {
+    box-shadow: 0px 1px 30px #b0b0b0;
+    top: -1px;
+    transition: 0.3s;
+}
+
+#miphone .phonelink .phoneright a h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#miphone .phonelink .phoneright a p {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+#miphone .phonelink .phoneright a span {
+    font-size: 14px;
+    color: #ff6700;
+}
+
+#miphone .phonelink .phoneright a img {
+    width: 160px;
+    height: 160px;
+}
+
+
+/* 下面都是重复样式 */
+
+.mi-public {
+    background-color: #f5f5f5;
+}
+
+.mipublic .topnav {
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mipublic .topright {
+    display: flex;
+}
+
+.mipublic .topright a {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.mipublic .topright a:hover {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+.mipublic .imglink {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mipublic .imglink .last {
+    width: 234px;
+    height: 300px;
+}
+
+.mipublic .imglink a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 14px;
+    transition: 0.3s;
+}
+
+.mipublic .imglink a .i160px {
+    width: 160px;
+    height: 160px;
+}
+
+.mipublic .imglink a h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mipublic .imglink a>span {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.mipublic .imglink a p span {
+    font-size: 14px;
+    color: #ff6700;
+}
+
+.mipublic .imglink a p del {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-left: 0.5em;
+}
+
+.mipublic .imglink .i img {
+    width: 234px;
+    height: 300px;
+}
+
+.mipublic .imglink a:hover {
+    position: relative;
+    top: -1px;
+    box-shadow: 0px 1px 30px #b0b0b0;
+    transition: 0.3s;
+}
+
+.mipublic .imglink .last a {
+    width: 234px;
+    height: 143px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mipublic .imglink .last a img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.mipublic .imglink .last a i {
+    font-size: 48px;
+    color: #ff6700;
+    margin-right: 47px;
+}
+
+.mipublic .imglink .last a span {
+    font-size: 13px;
+    color: #ff6700;
+}
+
+.mipublic .imglink .last a div {
+    margin-left: 25px;
+}
+
+.mipublic .imglink .last h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.mipublic .imglink .last a:last-child span {
+    color: #b0b0b0;
+}
+
+.mipublic .bottomimg img {
+    width: 1226px;
+    height: 120px;
+}
+
+#page-video {
+    background-color: #f5f5f5;
+    padding: 0 0 28px 0;
+}
+
+.pagevideo .vtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.pagevideo .vtn .vtnr i {
+    font-size: 20px;
+}
+
+.pagevideo .vtn .vtnr {
+    transition: 0.3s;
+}
+
+.pagevideo .vtn .vtnr:hover {
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+.pagevideo .video ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagevideo .video ul li a {
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 285px;
+    background-color: #fff;
+    position: relative;
+    transition: 0.3s;
+    color: #616161;
+    font-size: 16px;
+}
+
+.pagevideo .video ul li a p {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pagevideo .video ul li a img {
+    width: 296px;
+    height: 180px;
+}
+
+.pagevideo .video ul li a span {
+    position: absolute;
+    font-size: 24px;
+    left: 20px;
+    top: 145px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.pagevideo .video ul li a:hover {
+    box-shadow: 0px 1px 30px #b0b0b0;
+    top: -1px;
+    transition: 0.3s;
+}
+
+.pagevideo .video ul li a:hover span {
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+#page-bottom .pbt ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 28px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#page-bottom .pbt ul li a {
+    color: #616161;
+    transition: 0.3s;
+}
+
+#page-bottom .pbt ul li a:hover {
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+#page-bottom .pbt ul li a span {
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+}
+
+#page-bottom .pbt ul>span {
+    color: #e0e0e0;
+    font-weight: 100;
+}
+
+#page-bottom .pbc {
+    margin-top: 28px;
+    display: flex;
+}
+
+#page-bottom .pbcl {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+#page-bottom .pbc ul {
+    margin-right: 115px;
+}
+
+#page-bottom .pbc .pbcl ul h3 {
+    font-size: 14px;
+    color: #424242;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+#page-bottom .pbc .pbcl ul li {
+    font-size: 12px;
+    color: #757575;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#page-bottom .pbc .pbcl ul li a:hover {
+    color: #ff6700;
+}
+
+#page-bottom .pbcr {
+    display: flex;
+    flex-direction: column;
+}
+
+#page-bottom .pbcr h3 {
+    font-size: 22px;
+    color: #ff6700;
+    font-weight: 500;
+}
+
+#page-bottom .pbcr>i {
+    font-size: 12px;
+    color: #616161;
+    margin: 5px 0;
+}
+
+#page-bottom .pbcr>a {
+    display: flex;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ff6700;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #ff6700;
+    transition: 0.3s;
+}
+
+#page-bottom .pbcr>a:hover {
+    background-color: #ff6700;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#page-bottom .pbcr>a span {
+    position: relative;
+    top: 1px;
+}
+
+#page-bottom .pbcr>span {
+    font-size: 12px;
+    color: #616161;
+    margin-top: 5px;
+}
+
+#page-bottom .pbcr>span i {
+    margin: 0 3px;
+    font-size: 20px;
+}
+
+#page-bottom .pbcr>span i:hover {
+    color: #ff6700;
+    cursor: pointer;
+}
+
+.fixed {
+    width: 84px;
+    height: 465px;
+    position: fixed;
+    top: 200px;
+    right: 0;
+}
+
+.fixed a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 92px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.fixed a:last-child {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.fixed a span {
+    font-size: 28px;
+    color: #b0b0b0;
+}
+
+.fixed a i {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.fixed a:hover span,
+.fixed a:hover i {
+    color: #ff6700;
+    transition: 0.3s;
+}

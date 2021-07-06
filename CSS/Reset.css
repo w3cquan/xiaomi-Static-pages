@@ -1,0 +1,56 @@
+/* 网页重置样式 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+.layer {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+i {
+    font-style: normal;
+}
+
+.navbimg {
+    width: 1226px;
+    height: 120px;
+}
+
+.h2public {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+}
+
+.tabpublic {
+    font-size: 16px;
+}
